@@ -22,6 +22,8 @@ int main() {
 }
 
 void parseData(std::string inputString) {
-	std::cout << inputString << std::endl;
+	if (inputString.substr(inputString.length() - 9, 9) == "Available") {
+		std::cout << inputString << std::endl;
+	}
 
 }
